@@ -27,4 +27,7 @@ Ensure you have the following installed:
    ```bash
    git clone https://github.com/AnandhuGITHUB/translator.git
    ```
-2. Run flutter pub get
+2. Run the command from your project directory to get all dependecies.
+  ```bash
+   flutter pub get
+   ```
