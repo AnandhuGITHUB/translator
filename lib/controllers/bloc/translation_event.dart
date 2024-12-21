@@ -3,12 +3,6 @@ part of 'translation_bloc.dart';
 @immutable
 sealed class TranslationEvent {}
 
-// class TranslateTextEvent extends TranslationEvent {
-//   final String text;
-
-//   TranslateTextEvent(this.text);
-// }
-
 class FetchLanguagesEvent extends TranslationEvent {}
 
 class SearchLanguagesEvent extends TranslationEvent {
