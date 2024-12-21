@@ -25,6 +25,6 @@ Ensure you have the following installed:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/AnandhuGITHUB/translator.git
    ```
 2. Run flutter pub get
