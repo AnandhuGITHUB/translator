@@ -1,4 +1,4 @@
-# Google Translator Flutter App
+# Translator Flutter App
 
 This project is a simple Translator app built with Flutter. It fetches language lists and translates text to the selected language using third-party API services.
 
