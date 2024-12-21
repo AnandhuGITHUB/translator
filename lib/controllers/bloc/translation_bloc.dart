@@ -54,21 +54,6 @@ class TranslationBloc extends Bloc<TranslationEvent, TranslationState> {
     }
   }
 
-  // void _updateFromLanguage(
-  //     UpdateFromLanguageEvent event, Emitter<TranslationState> emit) {
-  //   if (state is LanguageLoaded) {
-  //     final currentState = state as LanguageLoaded;
-  //     emit(currentState.copyWith(translatedFrom: event.fromLanguage));
-  //   }
-  // }
-
-  // void _updateToLanguage(
-  //     UpdateToLanguageEvent event, Emitter<TranslationState> emit) {
-  //   if (state is LanguageLoaded) {
-  //     final currentState = state as LanguageLoaded;
-  //     emit(currentState.copyWith(translatedTo: event.toLanguage));
-  //   }
-  // }
   void _updateFromLanguage(
       UpdateFromLanguageEvent event, Emitter<TranslationState> emit) {
     if (state is LanguageLoaded) {
@@ -84,19 +69,4 @@ class TranslationBloc extends Bloc<TranslationEvent, TranslationState> {
       emit(currentState.copyWith(translatedTo: event.toLanguage));
     }
   }
-
-  // void _translateText(
-  //     TranslateTextEvent event, Emitter<TranslationState> emit) async {
-  //   emit(TranslationInProgress());
-  //   try {
-  //     final translatedText = await translationService.translate(
-  //       event.text,
-  //       event.targetLanguage,
-  //       event.sourceLanguage,
-  //     );
-  //     emit(TranslationResultState(translatedText));
-  //   } catch (e) {
-  //     emit(TranslationError("Error translating text: $e"));
-  //   }
-  // }
 }
